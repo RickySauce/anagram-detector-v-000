@@ -7,7 +7,7 @@ class Anagram
   end
 
   def match(sentence)
-    sentence = (%w(sentence))
+    sentence.split
     sentence.collect do |anagram|
      anagram.split.sort == @word.split.sort
     end
