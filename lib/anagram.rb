@@ -7,13 +7,9 @@ class Anagram
   end
 
   def match(list)
-    new_list = Array.new
-    list.each do |anagram|
-      if anagram.split.sort == @word.split.sort
-        new_list << anagram
-      end
+    list.find_all do |word|
+      word.split(//).sort == @word.split(//).sort
     end
-      new_list
   end
 
 end
