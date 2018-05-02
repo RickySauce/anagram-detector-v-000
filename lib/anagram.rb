@@ -9,7 +9,7 @@ class Anagram
   def match(sentence)
     sentence = (%w(sentence))
     sentence.find do |anagram|
-      anagram.sort == @word.sort
+      anagram.split.sort == @word.sort
     end
   end
 end
