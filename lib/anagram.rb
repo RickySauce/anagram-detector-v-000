@@ -13,5 +13,5 @@ class Anagram
     end
     sentence
   end
-  
+
 end
