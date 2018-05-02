@@ -11,4 +11,5 @@ class Anagram
     sentence.find do |anagram|
       anagram.sort == @word
     end
+  end
 end
