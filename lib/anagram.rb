@@ -11,9 +11,9 @@ class Anagram
     sentence.find_all do |anagram|
       if anagram.split.sort == @word.split.sort
         list << anagram
-      
+
     end
-    sentence
+    list
   end
 
 end
