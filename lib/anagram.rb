@@ -7,14 +7,12 @@ class Anagram
   end
 
   def match(sentence)
-    list = Array.new
+    
     sentence = (%w(sentence))
-    sentence.find_all do |anagram|
-      if anagram.split.sort == @word.split.sort
-        list << anagram
-      end
+    sentence.collect do |anagram|
+     anagram.split.sort == @word.split.sort
     end
-    list
+    sentence
   end
 
 end
